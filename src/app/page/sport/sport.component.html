@@ -1,0 +1,13 @@
+<h1>Sport Page</h1>
+<div class="row">
+  <div class="col-3"*ngFor="let d of products">
+    <div class="card">
+      <img [src]="d.thumbnail" class="img-fluid">
+      <div class="card-body">
+        <h3><a routerLink="/product/{{d.id}}">{{d.title}}</a></h3>
+        <p class="text-danger">{{d.price}}</p>
+        <button class="btn btn-outline-danger">Add to card</button>
+      </div>
+    </div>
+  </div>
+</div>

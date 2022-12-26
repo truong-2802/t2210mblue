@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<div class="container">
+    <div class="row">
+      <div class=" col-4" *ngFor="let d of product">
+        <div class="card" >
+          <img src="{{d.images}}" class="img-fluid">
+          <div class="card-body">
+            <h3>{{d.book}}</h3>
+            <h5>{{d.introduce}}</h5>
+          </div>
+          <div class="card-footer">
+            <p>Giá: {{d.price}}</p>
+            <p><button type="button" class="btn btn-outline-primary">{{d.buying}}</button></p>
+            <button class="btn btn-light"><i class="bi bi-car-front-fill"></i> Có chỗ đỗ xe</button>
+            <button class="btn btn-light"><i class="bi bi-shop-window"></i> Phục vụ tại chỗ</button>
+            <button class="btn btn-light"><i class="bi bi-handbag"></i> Mua mang đi</button>
+            <button class="btn btn-light"><i class="bi bi-people"></i> Phù hợp với nhóm bạn</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>
